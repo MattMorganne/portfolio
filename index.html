@@ -1,132 +1,310 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | NGANGOU MATOKA</title>
-    <link rel="stylesheet" href="index.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio | NGANGOU MATOKA</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
 
-<body>
+    <body>
 
-<header>
-    <h1>Mon Portfolio</h1>
-    <nav>
-        <ul>
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#projects">Projets</a></li>
-            <li><a href="#contact">Liens</a></li>
-        </ul>
-    </nav>
-</header>
-
-<main>
-
-    <!-- SECTION HERO -->
-    <section id="home">
-        <div>
-            <h2>NGANGOU MATOKA <span>Vim's Morganne</span></h2>
-            <h3>Développeur Web & Mobile</h3>
-
-            <p>
-                Ce portfolio présente mes compétences, mon parcours
-                et les projets que j’ai réalisés jusqu’à aujourd’hui.
-            </p>
-
-            <img src="./assets/profile.jpeg" id="mainjpg" alt="Photo de profil de NGANGOU MATOKA">
-        </div>
-    </section>
-
-    <!-- SECTION A PROPOS -->
-    <section id="about">
-        <h2>Expérience professionnelle</h2>
-
-        <p>
-            Diplômé et titulaire d’un Bachelor en informatique obtenu en Afrique du Sud,
-            j’ai effectué un stage d’un an dans une agence spécialisée
-            dans le développement de projets web et mobiles.
-            <br><br>
-            Durant cette période, j’ai travaillé sur plusieurs projets
-            professionnels et personnels, dont certains sont présentés ci-dessous.
-        </p>
-
-        <div id="contact">
-            <h3>Me retrouver en ligne</h3>
-            <ul>
-                <li><a href="#">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/matoka-morgan-7b4023261/">LinkedIn</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h3>Expériences</h3>
-            <ul>
-                <li>HP Concept</li>
-                <li>Projets personnels & entrepreneuriat</li>
-                <li>Unitac Solution – Stagiaire développeur logiciel</li>
-                <li>Optimum IT – Poste actuel (Gabon)</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- SECTION PROJETS -->
-    <section id="projects">
-        <h2>Projets</h2>
-
-        <!-- MONKAMA -->
-        <article id="monkama">
-            <div>
-                <h3>Monkama</h3>
-                <p>
-                    Monkama est une plateforme web et mobile immobilière
-                    permettant aux utilisateurs de trouver des logements
-                    et des services immobiliers au Gabon.
-                </p>
-                <a href="https://monkama.com" target="_blank">Voir le projet</a>
+        <header>
+            <div class="header-container">
+                <h1><i class="fas fa-code"></i> Mon Portfolio</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-home"></i>
+                                Accueil</a></li>
+                        <li><a href="#about"><i class="fas fa-user"></i> À
+                                propos</a></li>
+                        <li><a href="#projects"><i class="fas fa-briefcase"></i>
+                                Projets</a></li>
+                        <li><a href="#contact"><i class="fas fa-link"></i>
+                                Liens</a></li>
+                    </ul>
+                </nav>
             </div>
-            <img src="./assets/monkama.png" alt="Aperçu du projet Monkama">
-        </article>
+        </header>
 
-        <!-- SURE -->
-        <article id="sure">
-            <div>
-                <h3>Sure</h3>
-                <p>
-                    Sure est un projet académique de fin d’année.
-                    Il s’agit d’une application de gestion de restaurant
-                    intégrant l’intelligence artificielle et le machine learning
-                    pour optimiser les commandes.
-                    <br><br>
-                    <em>Note : certains services backend sont actuellement indisponibles.</em>
-                </p>
-                <a href="https://sureapp.com" target="_blank">Voir le projet</a>
+        <main>
+
+            <!-- SECTION HERO -->
+            <section id="home" class="fade-in">
+                <div class="home-container">
+                    <h2>NGANGOU MATOKA <span class="highlight">Vim's
+                            Morganne</span></h2>
+                    <h3><i class="fas fa-laptop-code"></i> Développeur Web &
+                        Mobile</h3>
+
+                    <p>
+                        Ce portfolio présente mes compétences, mon parcours
+                        et quelques projets que j'ai réalisés.
+                    </p>
+
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn btn-primary"><i
+                                class="fas fa-rocket"></i> Voir mes projets</a>
+                        <a href="#contact" class="btn btn-secondary"><i
+                                class="fas fa-envelope"></i> Me contacter</a>
+                    </div>
+                </div>
+                <div class="profile-img-container">
+                    <div class="img-border"></div>
+                    <img src="./assets/profile.jpeg" id="mainjpg"
+                        alt="Photo de profil de NGANGOU MATOKA">
+                </div>
+            </section>
+
+            <!-- SECTION A PROPOS -->
+            <section id="about">
+                <div class="about-header slide-in-left">
+                    <h2><i class="fas fa-info-circle"></i> À propos de moi</h2>
+
+                    <p>
+                        Je suis <strong>NGANGOU MATOKA Vim's Morganne</strong>,
+                        développeur web et mobile, titulaire d'un
+                        <strong>Bachelor en informatique</strong>
+                        obtenue à la <strong>Tshwane University of
+                            Technology</strong>
+                        (Afrique du Sud).
+                        <br><br>
+                        Mon parcours combine formation académique,
+                        stage professionnel chez <strong>Unitac
+                            Solution</strong>
+                        et projets concrets dans le développement
+                        d'applications web, mobiles et cloud.
+                    </p>
+
+                    <div class="skills">
+                        <span class="skill-tag"><i class="fab fa-html5"></i>
+                            HTML/CSS</span>
+                        <span class="skill-tag"><i class="fab fa-js"></i>
+                            JavaScript</span>
+                        <span class="skill-tag"><i class="fab fa-react"></i>
+                            React</span>
+                        <span class="skill-tag"><i class="fab fa-node-js"></i>
+                            Node.js</span>
+                        <span class="skill-tag"><i
+                                class="fas fa-mobile-alt"></i> Mobile</span>
+                        <span class="skill-tag"><i class="fas fa-cloud"></i>
+                            Cloud</span>
+
+                        <!-- Nouvelles compétences ajoutées -->
+                        <span class="skill-tag"><i class="fab fa-java"></i>
+                            Java</span>
+                        <span class="skill-tag"><i class="fab fa-android"></i>
+                            Android Studio</span>
+                        <span class="skill-tag"><i class="fab fa-react"></i>
+                            React Native</span>
+                        <span class="skill-tag"><i class="fas fa-leaf"></i>
+                            Spring Boot</span>
+                        <span class="skill-tag"><i class="fab fa-linux"></i>
+                            Linux</span>
+                        <span class="skill-tag"><i
+                                class="fas fa-network-wired"></i>
+                            Networking</span>
+                        <span class="skill-tag"><i class="fas fa-language"></i>
+                            Français</span>
+                        <span class="skill-tag"><i class="fas fa-language"></i>
+                            Anglais</span>
+                    </div>
+                </div>
+
+                <div id="contact" class="slide-in-right">
+                    <h3><i class="fas fa-globe"></i> Me retrouver en ligne</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-github"></i>
+                                GitHub</a></li>
+                        <li><a
+                                href="https://www.linkedin.com/in/matoka-morgan-7b4023261/"><i
+                                    class="fab fa-linkedin"></i>
+                                LinkedIn</a></li>
+                        <li><a href="https://wa.me/241065433292"
+                                target="_blank"><i class="fab fa-whatsapp"></i>
+                                WhatsApp</a></li>
+                        <li><a href="mattmorgy241@gmail.com"><i
+                                    class="fas fa-envelope"></i> Email</a></li>
+                    </ul>
+                </div>
+
+                <div class="slide-in-left">
+                    <h3><i class="fas fa-briefcase"></i> Expériences</h3>
+                    <ul>
+                        <li><i class="fas fa-building"></i> HP Concept</li>
+                        <li><i class="fas fa-lightbulb"></i> Projets personnels
+                            & entrepreneuriat</li>
+                        <li><i class="fas fa-code"></i> Unitac Solution –
+                            Stagiaire développeur logiciel</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SECTION PROJETS -->
+            <section id="projects">
+                <h2><i class="fas fa-project-diagram"></i> Projets</h2>
+
+                <!-- MONKAMA -->
+                <article id="monkama" class="project-card">
+                    <div class="project-content">
+                        <div class="project-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Monkama</h3>
+                        <p>
+                            Monkama est une plateforme web et mobile immobilière
+                            permettant aux utilisateurs de trouver des logements
+                            et des services immobiliers au Gabon.
+                        </p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Mobile</span>
+                        </div>
+                        <a href="https://monkama.net" target="_blank"
+                            class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Voir le
+                            projet
+                        </a>
+                    </div>
+                    <div class="project-image">
+                        <img src="./assets/monkama.png"
+                            alt="Aperçu du projet Monkama">
+                    </div>
+                </article>
+
+                <!-- SURE -->
+                <article id="sure" class="project-card">
+                    <div class="project-content">
+                        <div class="project-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Sure</h3>
+                        <p>
+                            Sure est un projet académique de fin d'année.
+                            Il s'agit d'une application de gestion de restaurant
+                            intégrant l'intelligence artificielle et le machine
+                            learning pour optimiser les commandes.
+                            <br><br>
+                            <em>Note : certains services backend sont
+                                actuellement indisponibles.</em>
+                        </p>
+                        <div class="project-tech">
+                            <span>AI/ML</span>
+                            <span>Python</span>
+                            <span>React Native</span>
+                            <span>API</span>
+                        </div>
+                        <a href="https://sure.cc" target="_blank"
+                            class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Voir le
+                            projet
+                        </a>
+                    </div>
+                    <div class="project-image">
+                        <img src="./assets/sure.png"
+                            alt="Aperçu du projet Sure">
+                    </div>
+                </article>
+
+                <!-- MS SERVICES -->
+                <article id="ms-services" class="project-card">
+                    <div class="project-content">
+                        <div class="project-icon">
+                            <i class="fas fa-money-bill-transfer"></i>
+                        </div>
+                        <h3>MS Services </h3>
+                        <p>
+                            MS Services est un projet conçu pour accompagner
+                            une entreprise de transfert d'argent,
+                            avec un système de conversion dynamique des devises.
+                        </p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                            <span>API</span>
+                        </div>
+                        <a href="https://ms-servicecorp.com/" target="_blank"
+                            class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Voir le
+                            projet
+                        </a>
+                    </div>
+                    <div class="project-image">
+                        <img src="./assets/ms-services.png"
+                            alt="Aperçu du projet MS Services">
+                    </div>
+                </article>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-code fa-2x"></i>
+                    <p>NGANGOU MATOKA</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home"><i class="fas fa-home"></i></a>
+                    <a href="#about"><i class="fas fa-user"></i></a>
+                    <a href="#projects"><i class="fas fa-briefcase"></i></a>
+                    <a href="#contact"><i class="fas fa-link"></i></a>
+                </div>
+                <p class="copyright">© 2026 – NGANGOU MATOKA. Tous droits
+                    réservés.</p>
             </div>
-            <img src="./assets/sure.png" alt="Aperçu du projet Sure">
-        </article>
+        </footer>
 
-        <!-- MS SERVICES -->
-        <article id="ms-services">
-            <div>
-                <h3>MS Services (Projet en cours)</h3>
-                <p>
-                    MS Services est un projet conçu pour accompagner
-                    une entreprise de transfert d’argent,
-                    avec un système de conversion dynamique des devises.
-                </p>
-                <a href="#">Voir le projet</a>
-            </div>
-            <img src="./assets/ms-services.png" alt="Aperçu du projet MS Services">
-        </article>
+        <div class="scroll-top">
+            <a href="#home"><i class="fas fa-chevron-up"></i></a>
+        </div>
 
-    </section>
-
-</main>
-
-<footer>
-    <p>© 2026 – NGANGOU MATOKA. Tous droits réservés.</p>
-</footer>
-
-</body>
+    </body>
 </html>
+<script>
+    // Animation du bouton "scroll to top"
+    const scrollTopBtn = document.querySelector('.scroll-top');
+    
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            scrollTopBtn.classList.add('active');
+        } else {
+            scrollTopBtn.classList.remove('active');
+        }
+    });
+    
+    // Animation des cartes au défilement
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+    
+    // Observer les cartes de projet
+    document.querySelectorAll('.project-card').forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(card);
+    });
+    
+    // Animation des éléments "about"
+    document.querySelectorAll('.slide-in-left, .slide-in-right').forEach(el => {
+        el.style.opacity = '0';
+        observer.observe(el);
+    });
+</script>
